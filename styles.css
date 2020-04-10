@@ -1,0 +1,74 @@
+:root{
+    --dark:#212121;
+    --primary: #ff9933;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+font-family:'Source Sans Pro', sans-serif;
+background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+min-height: 100%;
+}
+p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color:white;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+nav{
+    max-width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    background-color: var(--dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a{
+    font-size: 2.2rem;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+@media(min-width:768px){
+    nav a{
+    margin-bottom: 0;
+    }
+}
+nav a:last-of-type{
+    margin-bottom: 0;
+}
+@media(min-width:768px){
+    nav{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+.hero{
+    height: 45rem;
+    background-image: url(study.jpg);
+    position: relative;
+}
+.hero:after{
+    content: '';
+    background-color: rgba(0,0,0,.7);
+    display: block;
+}
+.container-hero i{
+    font-size: 3rem;
+    color:var(--primary);
+}
+table{
+    margin: center;
+    
+}
+
+}
